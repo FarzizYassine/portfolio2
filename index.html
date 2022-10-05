@@ -1,0 +1,711 @@
+<!DOCTYPE Html> 
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href= "logo.png">
+        <title>Farziz</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       
+    </head>
+    <body>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+            *{
+                padding: 0%;
+                margin: 0%;
+                font-family: 'Square Peg', cursive ;
+            }
+            #intro {
+                width: auto;
+                min-height: 100vh;
+                background-color: #edd0b1;
+                display: flex;
+                justify-content: space-between;
+            }
+            .first{
+                font-size: 150px;
+                padding-top: 15%;
+                padding-left: 10%;
+                width: 50%;
+                animation-delay: 1s;
+                animation: Farziz 1s linear 1;
+                visibility: hidden;
+                animation-fill-mode: forwards;
+            }
+            @keyframes Farziz{
+                0% {
+                    transform: translateX(-500px);
+                    visibility: visible;
+                }
+                100% {
+                    transform: translateX(0);
+                    visibility: visible;
+                }
+                
+            }
+            .seconde{
+                font-size: 150px;
+                padding-left: 20%;
+                animation: Yassine 1s linear 1;
+                animation-delay: 2s;
+                visibility: hidden;
+                animation-fill-mode: forwards;
+            }
+            @keyframes Yassine{
+                0% {
+                    transform: translateX(-500px);
+                    visibility: visible;
+                }
+                100% {
+                    transform: translateX(0);
+                    visibility: visible;
+                }
+                
+            }
+            .tirth img{
+                height: 100%;
+                width: auto;
+                animation: limage 1s linear 1;
+                animation-delay: 3s;
+                visibility: hidden;
+                animation-fill-mode: forwards;
+                position: absolute;
+                bottom: 0%;
+                right: 2%;
+            }
+            @keyframes limage {
+                from{
+                    transform: scale(0.5);
+                    visibility: visible;
+                }
+                to {
+                    transform: scale(1);
+                    visibility: visible;
+                }
+            }
+            .Demoi {
+               color: #edd0b1;
+               background-color: black;
+               min-height: 100vh;
+               width: 100%;
+               font-size: 80px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            .demoitext {
+                display: flex;
+            }
+            .Mes-competences {
+                color: #edd0b1;
+               background-color: black;
+               min-height: 100vh;
+               width: 100%;
+               font-size: 80px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            .detailes {
+                display: flex;
+                justify-content: space-around;
+                min-height: 100vh;
+                width: auto;
+            }
+            .bars{
+                min-height: 100vh;
+            }
+            .mescertificates {
+                color: #edd0b1;
+               background-color: black;
+               min-height: 100vh;
+               width: 100%;
+               font-size: 80px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            .lescertificates{
+                min-height: 100vh;
+            }
+            .tswira img {
+                height: 400px;
+                height: 400px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 15px;
+            }
+            .tswira {
+                margin: auto;
+                border: 5px solid #edd0b1;
+                padding: 5px;
+                border-radius: 30px;
+            }
+            .paragraphe {
+                border: 1px solid #edd0b1;
+                background-color: #edd0b1;
+                margin: auto;
+                border-radius: 0 25% 0 25%;
+                padding: 2%;
+                height: 400px;
+                width: 400px;
+                font-family: 'Square Peg', cursive ;
+                font-size: 30px;
+            }
+            .paragraphe p{
+                margin-top: 18%;
+            }
+            .mesprojets {
+               color: #edd0b1;
+               background-color: black;
+               min-height: 100vh;
+               width: 100%;
+               font-size: 80px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            .pourmecontacter {
+               color: #edd0b1;
+               background-color: black;
+               min-height: 100vh;
+               width: 100%;
+               font-size: 80px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            .logos {
+                background-color: #edd0b1;
+                min-height: 100vh;
+                display: block;
+                justify-content: space-around;
+            }
+            .lesprojets{
+                min-height: 100vh;
+                display: flex;
+                flex-flow: wrap;
+            }
+            .mescertificates {
+                color: #edd0b1;
+               background-color: black;
+               min-height: 100vh;
+               width: 100%;
+               font-size: 80px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            .twal {
+                width: 200px;
+                height: 400px;
+                border-radius: 3%;
+                border: 2px solid black;
+                margin: 2%;
+            }
+            .others {
+                width: 400px;
+                height: 200px;
+                border-radius: 3%;
+                border: solid 2px black;
+                margin: 2%;
+                cursor: none;
+            } 
+            .others:hover {
+                transform: scale(1.1);
+            }
+            .bar {
+                width: 400px;
+                background-color: gray;
+                margin: 2%;
+            }
+            ::-webkit-scrollbar {
+                width: 5px;
+            }
+            ::-webkit-scrollbar-track {
+                background-color: #edd0b1;
+            }
+            ::-webkit-scrollbar-thumb {
+                background-color: black;
+                border-radius: 5px;
+                height: 60px;
+            }
+            .binary i{
+                font-size: 50px;
+                margin: 10%;
+            }
+            @keyframes brand {
+                
+            }
+            .card {
+                border-radius: 5%;
+                width: 400px;
+                height: 400px;
+                display: block;
+                border: 2px solid black;
+            }
+            .card p{
+                border-radius: 0 5% 0 0;
+                width: 100%;
+                height: 100%;
+                color: white;
+                background-color: black;
+
+            }
+            .card img{
+                width: 400px;
+                height: auto;
+            }
+            .projets {
+                padding-left: 3%;
+            }
+            .à {
+                padding-right: 2%;
+            }
+            .parallax {
+                width: 400px;
+                height: 200px;
+                border-radius: 5%;
+                background-image: url("parallax.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 5%;
+                display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            .landing {
+                width: 400px;
+                height: 200px;
+                border-radius: 5%;
+                background-image: url("landing.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 5%;
+                display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            .login {
+                width: 400px;
+                height: 200px;
+                border-radius: 5%;
+                background-image: url("login.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 5%;
+                display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            .tribute {
+                width: 400px;
+                height: 200px;
+                border-radius: 5%;
+                background-image: url("tribute.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 5%;
+                display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            .cestletemps {
+                width: 400px;
+                height: 200px;
+                border-radius: 5%;
+                background-image: url("cestletemps.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 5%;
+                display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            .ps {
+                width: 400px;
+                height: 200px;
+                border-radius: 5%;
+                background-image: url("ps.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 5%;
+                display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            .sf {
+                width: 400px;
+                height: 200px;
+                border-radius: 5%;
+                background-image: url("sf.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 5%;
+                display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            .cards h1{
+                visibility: hidden;
+            }
+            .cards:hover {
+                cursor: pointer;
+                background-image: none;
+                background-color: black;
+            }
+            .cards:hover h1{
+                visibility: visible;
+                color: white;
+                transition-delay: 0.3s;
+            }
+            .typing-text {
+                display: flex;
+                font-size: 28px;
+                width: 100%;
+                margin-left: 30%;
+                margin-top: 20%;
+                animation: typing 1s linear 1;
+                animation-delay: 4s;
+                animation-fill-mode: forwards;
+                visibility: hidden;
+            }
+            @keyframes typing {
+                0%{
+                    transform: translateY(200px); 
+                    visibility: visible;
+                }
+                100%{
+                    transform: translateY(0);
+                    visibility: visible;
+                }
+            }
+            .auto-type {
+                margin-left: 2%;
+            }
+            .other-certif {
+                display: flex;
+                flex-wrap: wrap;
+            }
+             .the-skills {
+                display: flex;
+                min-height: 100vh;
+             }
+             .lescompetences {
+                min-height: 100vh;
+                width: 100%;
+                background-color: #edd0b1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+             }
+             .progress {
+                position: relative;
+                width: 350px;
+                height: 30px;
+                background-color: white;
+                margin: 10px;
+                border: 1px solid black;
+             }
+             .progress span {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                background-color: black;
+                transition: width 0.3s linear;
+             }
+             .binary {
+                min-height: 100vh;
+                width: 100%;
+                font-size: 50px;
+                justify-content: space-around;
+             }
+            @media (max-width : 500px){
+                .twal {
+                    width: 100px;
+                    height: 200px;
+                }
+                #intro {
+                    display: block;
+                    width: 100%;
+                    min-height: 100vh;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .typing-text {
+                    font-size: 15px;
+                }
+                .tirth img {
+                    width: 0;
+                    height: 0;
+                    display: none;
+                }
+                .tirth {
+                    width: 0;
+                    height: 0;
+                     display: none;
+                }
+                .first {
+                    font-size: 75px;
+                }
+                .seconde {
+                    font-size: 75px;
+                }
+                .detailes {
+                    display: block;
+                    justify-content: space-around;
+                    min-height: 100vh;
+                    width: 100%;
+                }
+                .others{
+                    width: 200px;
+                    height: 100px;
+                }
+                .tswira {
+                    width: 0;
+                    height: 0;
+                    display: none;
+                }
+                .paragraphe {
+                    width: 100%;
+                    text-align: center;
+                    min-height: 100vh;
+                    border-radius: 0%;
+                    padding: 0%;
+                    margin: 0%;
+                }
+                .paragraphe p {
+                    font-size: 40px;
+                    height: 100%;
+                }
+                .detailes hr{
+                    display: none;
+                }
+                .Mes-competences{
+                    font-size: 30px;
+                }
+                .mescertificates{
+                    font-size: 30px;
+                }
+                .pourmecontacter {
+                    font-size: 30px;
+                }
+                .mesprojets{
+                    font-size: 30px;
+                }
+                .demoitext {
+                    font-size: 30px;
+                }
+                #about-me{
+                    min-height: 100vh;
+                }
+                #skills {
+                    min-height: 100vh;
+                }
+                #certificats {
+                    min-height: 100vh;
+                }
+                #projects {
+                    min-height: 100vh;
+                }
+                #contact {
+                    min-height: 100vh;
+                }
+                .progress {
+                    width: 200px;
+                }
+                .binary{
+                    display: none;
+                }
+            }
+        </style>
+      <div id="intro">
+        <div class="text">
+       <h1 class="first"><i>Farziz</i></h1>
+       <h1 class="seconde"><i>yassine</i></h1>
+       <div class="typing-text">
+       <h3>J'suis un</h3><h3 class="auto-type"></h3>
+       </div>
+       </div>
+       <div class="tirth">
+           <img src="portfolio2.png">
+       </div>
+      </div>
+      <div id="about-me">
+          <div class="Demoi">
+              <div class="demoitext">
+               <h1 class="à" data-aos="fade-down">À</h1><h1 class="projets" data-aos="fade-up">propos</h1><h1 class="projets" data-aos="fade-down">de</h1><h1 class="projets" data-aos="fade-up" >Moi</h1> 
+          </div>
+          </div>
+          </div>
+          <div class="detailes">
+         <div class="tswira"data-aos="fade-down" data-aos-duration="1000">
+          <img src="demoi.jpg">
+          </div>
+          <hr data-aos-duration="1000">
+          <div class="paragraphe" data-aos="fade-up" data-aos-duration="1000">
+          <p>
+           Salut tous le monde , j'suis yassine un étudiant à l'école marocaine des sciences de l'ingenieur agé de 20 ans j'ai commencer la programmation en 2021 avec les langages de programmation web et après j'ai apris pas mal de lanagages comme le SQL , C , C++ ,Python et le javascript .
+          </p>
+          </div>
+      </div>
+      <div id="skills">
+          <div class="Mes-competences">
+          <h1 class="mes" data-aos="fade-down">Mes</h1> <h1 class="projets" data-aos="fade-up">Competences</h1>
+          </div>
+          <div class="the-skills">
+            <div class="binary">
+                <i class="fa-solid fa-code"></i>
+                <i class="fa-brands fa-linux"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-solid fa-database"></i>
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-solid fa-network-wired"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+
+                <i class="fa-brands fa-php"></i>
+                <i class="fa-brands fa-swift"></i>
+                <i class="fa-brands fa-angular"></i>
+                <i class="fa-solid fa-server"></i>
+            </div>
+          <div class="lescompetences">
+            <h3>HTML</h3>
+            <div class="progress">
+                <span style="width : 0" data-width="90%"></span>
+            </div>
+            <h3>CSS</h3>
+            <div class="progress">
+                <span style="width : 0" data-width="80%"></span>
+            </div>
+            <h3>Javascript</h3>
+            <div class="progress">
+                <span style="width : 0" data-width="75%"></span>
+            </div>
+            <h3>SQL</h3>
+            <div class="progress">
+                <span style="width : 0" data-width="75%"></span>
+            </div>
+            <h3>C++</h3>
+            <div class="progress">
+                <span style="width : 0" data-width="65%"></span>
+            </div>
+            </div>
+            <div class="binary">
+                <i class="fa-solid fa-code"></i>
+                <i class="fa-brands fa-linux"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-solid fa-database"></i>
+                <i class="fa-brands fa-swift"></i>
+                <i class="fa-brands fa-angular"></i>
+                <i class="fa-solid fa-server"></i>
+                
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-solid fa-network-wired"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-php"></i>
+                
+            </div>
+          </div>
+         
+          </div>
+      <div id="certificats">
+          <div class="mescertificates">
+              <h1 data-aos="fade-down" class="mes">Mes</h1><h1 data-aos="fade-up" class="projets">Certificates</h1>
+          </div>
+          <div class="lescertificates">
+        <div class="other-certif">
+         <img src="a.png" class="others" data-aos="flip-left">
+         <img src="b.png"  class="others" data-aos="flip-left">
+         <img src="c.png"  class="others" data-aos="flip-left">
+         <img src="d.png"  class="others" data-aos="flip-left">
+         <img src="e.png"  class="others" data-aos="flip-left">
+         <img src="f.png"  class="others" data-aos="flip-left">
+         <img src="o.png"  class="others" data-aos="flip-left">
+         <img src="p.png"  class="others" data-aos="flip-left">
+         <img src="hh.png" class="others" data-aos="flip-left">
+         <img src="ii.png" class="others" data-aos="flip-left">
+         <img src="g.png"  class="others" data-aos="flip-left">
+         </div>
+         <div class="certif-twal">
+         <img src="k.png" class="twal" data-aos="flip-left">
+         <img src="l.png"class="twal" data-aos="flip-left">
+         <img src="m.png"class="twal" data-aos="flip-left">
+         <img src="nn.png" class="twal" data-aos="flip-left">
+         <img src="j.png" class="twal" data-aos="flip-left">
+         </div>
+          </div>
+      </div>
+      <div id="projects">
+          <div class="mesprojets">
+              <h1 data-aos="fade-down" class="mes">Mes</h1> <h1 data-aos="fade-up" class="projets">projets</h1>
+          </div>
+          <div class="lesprojets">
+            <div class="cards parallax" data-aos="zoom-in">
+                <h1 class="titre">parallax page</h1>
+               </div>
+               <div class="cards landing" data-aos="zoom-in">
+                <h1 class="titre">landing page</h1>
+               </div>
+               <div class="cards login" data-aos="zoom-in">
+                <h1 class="titre">Log in page</h1>
+               </div>
+               <div class="cards tribute" data-aos="zoom-in">
+                <h1 class="titre">tribute page</h1>
+               </div>
+               <div class="cards cestletemps" data-aos="zoom-in">
+                <h1 class="titre">C'est le temps !</h1>
+               </div>
+               <div class="cards ps" data-aos="zoom-in">
+                <h1 class="titre">Photo editor</h1>
+               </div>
+               <div class="cards sf" data-aos="zoom-in">
+                <h1 class="titre">Suvery Form</h1>
+               </div>
+      </div>
+      <div id="contact">
+          <div class="pourmecontacter">
+              <h1 data-aos="fade-down" class="pour">pour</h1><h1 data-aos="fade-up" class="projets">me</h1><h1 data-aos="fade-down" class="projets"> contacter </h1>
+          </div>
+          <div class="logos">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""> <i class="fa-brands fa-facebook"></i> </a>
+            <a href="">   <i class="fa-brands fa-github"></i> </a>
+                <a href="">  <i class="fa-brands fa-linkedin"></i> </a>
+          </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        let section= document.querySelector(".the-skills");
+        let spans = document.querySelectorAll(".progress span");
+        window.onscroll = function() {
+            if(window.scrollY >= section.offsetTop) {
+                console.log("hey");
+                spans.forEach((span) => {
+                    span.style.width = span.dataset.width;
+                });
+            }
+        };
+          var typed = new Typed(".auto-type" , {
+            strings: ["étudiant ingenieur ","devlopeur front-end","freelancer","createur de contenue"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+		AOS.init();
+	  </script>
+    </body>
+</html>
